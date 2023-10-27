@@ -103,7 +103,7 @@ Invoke-Command -ScriptBlock $c2menu
             
         Invoke-Command -ScriptBlock $c2status
 
-        ./sophos_ndr_eicar_client.exe --region $region[$position] 2>&1 | Out-File -FilePath ./eicar_output
+        ./NdrEicarClient.exe --region $region[$position] 2>&1 | Out-File -FilePath ./eicar_output
 
         if($position -ge 4) {
         $position = 0    
